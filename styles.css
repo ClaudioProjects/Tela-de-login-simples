@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400;1,500&family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+root {
+    --var-op-main: 1;
+    --var-pos-icon: -40px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    
+}
+
+.main-login {
+    height: 100vh;
+    width: 100%;
+    background: rgb(235, 235, 235);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.content-login {
+    height: 100%;
+    width: 65%;
+    background: #F3C5C5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-login h1 {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 60px;
+}
+
+.content-login img {
+    background-size: cover;
+    min-height: 500px;
+    min-width: 400px;
+    height: 55%;
+    width: 40%;
+}
+
+.main-login h2 {
+    font-size: 46px;
+    font-weight: 600;
+    width: 100%;
+    text-align: left;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+}
+
+.login {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+}
+
+.form-login{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 95%;
+    background: rgb(245, 245, 245);
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgb(196, 196, 196);
+    padding: 30px; 
+}
+
+.relative {
+    width: 100%;
+    position: relative;
+    margin-top: 60px;
+}
+
+.relative input {
+    outline: 0;
+    border: 2px solid transparent;
+    height: 45px;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(194, 194, 194); 
+    font-size: 17px;
+    padding-left: 5px;
+}
+
+.relative label {
+    font-size: 19px;
+    position: absolute;
+    left: 1px;
+    top: -26px;
+    color: rgb(46, 46, 46);
+    transition: 0.1s ease-in-out;
+}
+
+.relative input:focus {
+    border: 2px solid #F3C5C5;
+}
+
+
+.main-btn-login{
+    margin-top: 35px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    box-shadow: 0 0 5px rgb(201, 201, 201);
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 15px;
+    color: white;
+}
+
+.green {
+    background: #82bd95;
+}
+
+.blue {
+    background: #4D96FF;
+}
+
+.login p {
+    text-align: center;
+    margin-top: 50px;
+    width: 90%;
+}
+
+.error-text{
+    color: red;
+}
+
+.main-content {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+
+}
+
+.sidebar {
+    background: #F3C5C5;
+    width: 450px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-flow: column;
+    position: relative;
+    transition: 0.3s ease-in-out;
+}
+
+#sidebar h2 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    top: 20px;
+    left: 20px;
+    position: absolute;
+    opacity: var(--var-op-main);
+}
+
+.img-user{
+    margin-top: 70px;
+    height: 30%;
+}
+
+.img-user img{
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 7px solid rgb(75, 75, 75);
+    opacity: var(--var-op-main);
+}
+
+.icons-main {
+    display: flex;
+    flex-flow: column;
+    height: 40%;
+    justify-content: space-between;
+}
+
+.icons-main a, .logout a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.icons-main a:link, .logout a:link {
+    text-decoration: none;
+}
+
+.icons-main span, .logout span {
+    color: black;
+    font-size: 27px;
+    opacity: var(--var-op-main);
+}
+
+.icons-main img, .logout img {
+    background-size: cover;
+}
+
+.logout img{
+    top: -12px
+}
+
+.logout {
+    padding-top: 60px;
+}
+
+.content {
+    background: rgb(231, 231, 231);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+
+#content h1 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 50px;
+}
+
+#content p {
+    text-align: center;
+    padding: 10px;
+}
+
+.none{
+    display: none;
+}
+
+.open-side {
+    border: 0;
+    position: absolute;
+    top: 5%;
+    right: 0;
+    cursor: pointer;
+    background-image: url('./img/arrow_forward_ios_black_24dp.svg');
+    background-size: cover;
+    background-color: transparent;
+    height: 40px;
+    width: 40px;
+}
+
+.reduce {
+    width: 70px;
+    transition: 0.3s ease-in-out;
+    padding-left: 50px;
+}
+
+.opacity0 {
+    --var-op-main: 0;
+    --var-pos-icon: 5px;
+}
+
+@media (max-width: 1200px) {
+    .content-login {
+        width: 55%;
+    }
+
+    .login {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-login {
+        width: 100%;
+        display: block;
+    }
+
+    .content-login {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .content-login img {
+        min-width: 300px;
+        min-height: 400;
+    }
+
+    .login {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .login p {
+        font-size: 11px;
+    }
+    
+    .none {
+        display: none;
+    }
+    #content h1 {
+        font-size: 190%;
+    }
+}
+
+@media (max-width: 444px) {
+    .sidebar {
+        width: 100%;
+        transition: 0.1s ease-in;
+    }
+    .reduce {
+        width: 70px;
+    }
+
+    .mobileContent {
+        display: none;
+    }
+}
+
+@media (max-height: 750px) {
+    .icons-main {
+        height: 25%;
+    }
+    .logout {
+        height: 10%;
+    }
+}
+
+@media (max-height: 695px) {
+
+    .icons-main{
+        height: 30%;
+    }
+    .icons-main span, .logout span {
+        font-size: 23px;
+    }
+    .logout {
+        height: 10%;
+    }
+    .img-user img {
+        height: 140px;
+        width: 140px;
+    }
+}
